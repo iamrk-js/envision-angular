@@ -1,0 +1,12 @@
+<p title="Parent Para" [textContent]="'Parent Component'"></p>
+<button class="btn btn-primary" (click)="onClickHandler()">Click</button>
+<hr>
+<app-child 
+        [msgFromParent]="'Work Hard Party Hard!!!'" 
+        (childClick) = "onChildClickHandler($event)">
+</app-child>
+
+<hr>
+<p>
+    msg from child to parent : {{msgFromChild}}
+</p>
